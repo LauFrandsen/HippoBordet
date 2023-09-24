@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .guide {
+            display: none;
+        }
+        .show-guide .guide {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tilslutningsguide</h1>
+    </div>
+    <div class="content">
+        <div class="button-container">
+            <button class="button" id="connectionInfoBtn">Jeg skal kun bruge tilslutningsinformation</button>
+            <button class="button" id="fullGuideBtn">Jeg skal bruge en fuld guide</button>
+        </div>
+        <div class="guide">
+            <h2>Fuld Guide</h2>
+            <p>This is the full guide with detailed instructions on how to proceed.</p>
+        </div>
+        <div class="guide">
+            <h2>Tilslutningsinformation</h2>
+            <p>Here is the connection information you need:</p>
+            <ul>
+                <li>Connection Option 1: Details go here</li>
+                <li>Connection Option 2: Details go here</li>
+                <li>
